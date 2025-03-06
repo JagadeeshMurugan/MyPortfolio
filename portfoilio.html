@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagadeesh Murugan - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background: #0d1117;
+            color: #e6edf3;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+        }
+        header {
+            text-align: center;
+            padding: 80px 0;
+            background: linear-gradient(135deg, #0073e6, #004ba0);
+            color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header h1 {
+            font-size: 3em;
+            font-weight: 600;
+        }
+        header p {
+            font-size: 1.3em;
+        }
+        section {
+            margin: 60px 0;
+            padding: 30px;
+            background: rgba(22, 27, 34, 0.8);
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #58a6ff;
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 8px;
+            font-size: 2em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul li {
+            background: #21262d;
+            margin: 8px;
+            padding: 14px 22px;
+            border-radius: 8px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            transition: 0.3s;
+        }
+        ul li:hover {
+            background: #58a6ff;
+            color: #0d1117;
+        }
+        ul li i {
+            margin-right: 12px;
+            color: #58a6ff;
+            transition: 0.3s;
+        }
+        .contact a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .contact a:hover {
+            color: #ff9800;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-card {
+            flex: 1;
+            min-width: 300px;
+            background: #161b22;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            background: #21262d;
+        }
+        .project-card h3 {
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            font-size: 1em;
+            color: #c9d1d9;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jagadeesh Murugan</h1>
+        <p>Data Engineer | Cloud Specialist</p>
+    </header>
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Detail-oriented Data Engineer with expertise in Python, SQL, PySpark, and cloud technologies. Passionate about building scalable data solutions.</p>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>Integrated MSc in Data Science</strong><br>Amrita Vishwa Vidyapeetham, Coimbatore, India (2021 - 2026)</p>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><i class="fab fa-python"></i>Python</li>
+                <li><i class="fas fa-database"></i>SQL</li>
+                <li><i class="fas fa-server"></i>PostgreSQL</li>
+                <li><i class="fas fa-cloud"></i>Azure</li>
+                <li><i class="fab fa-aws"></i>AWS</li>
+                <li><i class="fas fa-chart-line"></i>Power BI</li>
+                <li><i class="fas fa-code"></i>Web Development</li>
+            </ul>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>ETL Pipeline for NYC Taxi Data</h3>
+                <p>Built a scalable ETL pipeline using Azure, Databricks, and Delta Lake:</p>
+                <ul>
+                    <li>✅ Automated data ingestion with Azure Data Factory.</li>
+                    <li>✅ Stored raw data securely in Azure Data Lake Gen2.</li>
+                    <li>✅ Transformed data using Databricks & Delta Lake.</li>
+                    <li>✅ Implemented data quality checks.</li>
+                    <li>✅ Created interactive dashboards with Power BI.</li>
+                    <li>✅ Secured pipeline with Azure AD & Key Vault.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>📞 +91 9344755467</p>
+            <p>📧 <a href="mailto:jagadeeshmurugaan@gmail.com">jagadeeshmurugaan@gmail.com</a></p>
+            <p>📍 Katpadi, Vellore, India</p>
+            <p>🔗 <a href="https://www.linkedin.com/in/jagadeeshmurugan" target="_blank">LinkedIn</a></p>
+        </section>
+    </div>
+</body>
+</html>
